@@ -1,0 +1,169 @@
+body{
+    overflow-x: hidden;
+}
+
+.middler {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.middlepart1 {
+    text-align: center;
+}
+
+.roundbutton{
+    margin: 0px auto;
+    width: 300px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bluebutton{
+    display: block;
+	width: 100%;
+    height: 70px;
+    border: 5px solid #FFFFFF;
+	border-radius: 50px;
+    transition: .3s;
+}
+.bluebutton:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.white{
+    color: white; 
+}
+
+.P1 {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.P2{
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.blue{
+    color: #A00BA0;
+    font-size: 50px;
+}
+
+.bg1{
+    background-image: url(../images/KreativPartOne.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -1px;
+}
+
+.headergrid #section-a{
+    padding: 0%;
+    text-align: left;
+    margin: 50px 10%;
+}
+
+.headergrid #section-c{
+    padding: 0%;
+    text-align: middle;
+}
+
+.headergrid #section-b{
+    padding: 10%;
+}
+.headergrid{
+    grid-template-columns: repeat(2,160px);
+    grid-template-areas:
+    ". . . b b b"
+    "a a a b b b"
+    ". c . b b b"
+    ". . . b b b";
+}
+/* MAIN AREA */
+
+.threefocustext{
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    font-size: 17px;
+    padding: 50px 0%;
+}
+
+.bigger{
+    font-weight: bold;
+}
+
+.kreativPage{
+    grid-template-columns: repeat(9, 120px);
+    grid-gap: 20px;
+    margin-bottom: 10%;
+}
+
+.ThreePillar{
+    grid-template-areas: 
+    "a a a a . b b b b"
+    "a a a a . b b b b"
+    "d d d d . c c c c"
+    "d d d d . c c c c";
+}
+
+
+#section-d{
+    grid-area: d;
+    padding: 20px 0px;
+    color: #747474;
+    font-size: 21px;
+}
+
+.aset{
+    min-width: 100%;
+}
+
+main ul{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1140px){
+    .kreativPage{
+        grid-template-columns: repeat(9, 10%);
+    }
+    
+    .OurTalents{
+        grid-template-columns: repeat(9, 11%);
+    }
+
+    .beforeWatchUs{
+        grid-template-areas: 
+        "a a a a a b b b b b"
+        "a a a a a b b b b b";
+        grid-template-columns: repeat(10, 9%);
+    }
+}
+
+@media (max-width:768px){
+    main img{
+        width: 30%;
+    }
+
+    .aset{
+        width: 50%;
+    }
+    .headergrid{
+        margin-top: 0;
+        grid-template-columns: repeat(1,100%);
+        grid-template-areas:
+        "b"
+        "a";
+    }
+
+    .bg1 #section-a{
+        padding:0% ; 
+    }
+}
+
